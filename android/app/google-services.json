@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "122613859782",
+    "firebase_url": "https://tantrafiesta-6052b-default-rtdb.firebaseio.com",
+    "project_id": "tantrafiesta-6052b",
+    "storage_bucket": "tantrafiesta-6052b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122613859782:android:af79499683b2c385291ec7",
+        "android_client_info": {
+          "package_name": "com.example.r_place_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122613859782-8gokikcs38nrrlj7lrm0cboqfi7c11lj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.r_place_clone",
+            "certificate_hash": "bb837ab8ba5b55258f10bff652d33d3c8adcb1d5"
+          }
+        },
+        {
+          "client_id": "122613859782-puenrskmke85rosv5khlcne4g8stfe1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK30uohdYv8jZei6OSJdWn_Q9_7-nHKzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122613859782-puenrskmke85rosv5khlcne4g8stfe1h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "122613859782-9a4m8v44ud4km442dmvl9di8rll43b64.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.rPlaceClone"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

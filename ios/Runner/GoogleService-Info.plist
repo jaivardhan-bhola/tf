@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>122613859782-9a4m8v44ud4km442dmvl9di8rll43b64.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.122613859782-9a4m8v44ud4km442dmvl9di8rll43b64</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>122613859782-qcura6iecvqqrtlt87chg62pbl8l91c9.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD4fpmf-vfycUiWeyeRpCdj6MdmfRE7VHM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>122613859782</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.rPlaceClone</string>
+	<key>PROJECT_ID</key>
+	<string>tantrafiesta-6052b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tantrafiesta-6052b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:122613859782:ios:dbc4c687518d6ca5291ec7</string>
+</dict>
+</plist>
