@@ -8,6 +8,74 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:122613859782:android:c0b3b3f9294658de291ec7",
+        "android_client_info": {
+          "package_name": "com.ashurajput.tantrafiesta24"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122613859782-37vfs85ve4hjr7i3d8ctg4ue6ko0cc70.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ashurajput.tantrafiesta24",
+            "certificate_hash": "af94b5ad38cda5b5baf1633536632a4d11c33d7f"
+          }
+        },
+        {
+          "client_id": "122613859782-gul7v7lvche34dmgfinv9uktevbrsoed.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ashurajput.tantrafiesta24",
+            "certificate_hash": "fcfeb67520401efea3f6e33f7a56ef0ef1545899"
+          }
+        },
+        {
+          "client_id": "122613859782-oih28j4r45k71d6fttsqpr6589jm3ii0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ashurajput.tantrafiesta24",
+            "certificate_hash": "454e2c577b5e024280ec46893163766d64a50ee5"
+          }
+        },
+        {
+          "client_id": "122613859782-vug795vgscq5hrf2pitvqhvj2bssm7pn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ashurajput.tantrafiesta24",
+            "certificate_hash": "bb837ab8ba5b55258f10bff652d33d3c8adcb1d5"
+          }
+        },
+        {
+          "client_id": "122613859782-puenrskmke85rosv5khlcne4g8stfe1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK30uohdYv8jZei6OSJdWn_Q9_7-nHKzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122613859782-puenrskmke85rosv5khlcne4g8stfe1h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "122613859782-9a4m8v44ud4km442dmvl9di8rll43b64.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.rPlaceClone"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:122613859782:android:af79499683b2c385291ec7",
         "android_client_info": {
           "package_name": "com.example.r_place_clone"
@@ -20,6 +88,30 @@
           "android_info": {
             "package_name": "com.example.r_place_clone",
             "certificate_hash": "bb837ab8ba5b55258f10bff652d33d3c8adcb1d5"
+          }
+        },
+        {
+          "client_id": "122613859782-akjd25c85ospm0k4ula3nqg6ip5vtpp8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.r_place_clone",
+            "certificate_hash": "454e2c577b5e024280ec46893163766d64a50ee5"
+          }
+        },
+        {
+          "client_id": "122613859782-qcura6iecvqqrtlt87chg62pbl8l91c9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.r_place_clone",
+            "certificate_hash": "fcfeb67520401efea3f6e33f7a56ef0ef1545899"
+          }
+        },
+        {
+          "client_id": "122613859782-vumljamppecb6lhmjgetjqnjhcbl3tpo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.r_place_clone",
+            "certificate_hash": "af94b5ad38cda5b5baf1633536632a4d11c33d7f"
           }
         },
         {

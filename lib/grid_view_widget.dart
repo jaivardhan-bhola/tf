@@ -1,4 +1,3 @@
-//try 3
 import 'dart:async'; // Import for Timer
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -23,7 +22,8 @@ class _ScalableGridPainterState extends State<ScalableGridPainter> {
   final GlobalKey _canvasKey = GlobalKey();
   Timer? _cooldownTimer;
   bool isCooldownActive = false; // Add this variable
-  int cooldownDuration = 15; // Duration of cooldown in seconds
+  int cooldownDuration = 3; // Duration of cooldown in seconds
+  int remainingCooldownTime = 0; // Variable to track remaining cooldown time
 
   @override
   void initState() {
@@ -63,10 +63,13 @@ class _ScalableGridPainterState extends State<ScalableGridPainter> {
 
   void startCooldownTimer(int cooldownTime) {
     _cooldownTimer?.cancel(); // Cancel any existing timer
+    setState(() {
+      remainingCooldownTime = cooldownTime;
+    });
     _cooldownTimer = Timer.periodic(const Duration(seconds: 1), (timer) {
-      if (cooldownTime > 0) {
+      if (remainingCooldownTime > 0) {
         setState(() {
-          cooldownTime--;
+          remainingCooldownTime--;
         });
       } else {
         setState(() {
@@ -117,10 +120,14 @@ class _ScalableGridPainterState extends State<ScalableGridPainter> {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
+                SizedBox(height: screenWidth * 0.002),
                 if (isCooldownActive) // Show cooldown timer
                   Text(
-                    'Cooling Down',
-                    style: GoogleFonts.poppins(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w600),
+                    'Cooldown: $remainingCooldownTime s',
+                    style: GoogleFonts.poppins(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600),
                   ),
               ],
             ),
