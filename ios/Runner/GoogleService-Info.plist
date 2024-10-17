@@ -7,7 +7,7 @@
 	<key>REVERSED_CLIENT_ID</key>
 	<string>com.googleusercontent.apps.122613859782-9a4m8v44ud4km442dmvl9di8rll43b64</string>
 	<key>ANDROID_CLIENT_ID</key>
-	<string>122613859782-qcura6iecvqqrtlt87chg62pbl8l91c9.apps.googleusercontent.com</string>
+	<string>122613859782-37vfs85ve4hjr7i3d8ctg4ue6ko0cc70.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyD4fpmf-vfycUiWeyeRpCdj6MdmfRE7VHM</string>
 	<key>GCM_SENDER_ID</key>
@@ -31,6 +31,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:122613859782:ios:dbc4c687518d6ca5291ec7</string>
+	<string>1:122613859782:ios:9d7c385acff2476c291ec7</string>
+	<key>DATABASE_URL</key>
+	<string>https://tantrafiesta-6052b-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

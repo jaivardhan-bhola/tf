@@ -27,22 +27,49 @@ class _SignInState extends State<SignIn> {
         ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('No user found for that email.')));
       } else if (e.code == 'wrong-password') {
-        ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Wrong password provided for that user.')));
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+            content: Text('Wrong password provided for that user.')));
       }
     }
   }
 
+  // Future _googlesignin() async {
+  //   final GoogleSignInAccount? googleUser = await GoogleSignIn(scopes: ["profile", "email"]).signIn();
+  //   final GoogleSignInAuthentication googleAuth = await googleUser!.authentication;
+  //   final OAuthCredential credential = GoogleAuthProvider.credential(
+  //     accessToken: googleAuth.accessToken,
+  //     idToken: googleAuth.idToken,
+  //   );
+  //   await FirebaseAuth.instance.signInWithCredential(credential);
+  //   Navigator.pushReplacement(
+  //       context, MaterialPageRoute(builder: (context) => HomePage()));
+  // }
+
+  //17 ocotber
+  //trying google sign in by ash
   Future _googlesignin() async {
-    final GoogleSignInAccount? googleUser = await GoogleSignIn(scopes: ["profile", "email"]).signIn();
-    final GoogleSignInAuthentication googleAuth = await googleUser!.authentication;
-    final OAuthCredential credential = GoogleAuthProvider.credential(
-      accessToken: googleAuth.accessToken,
-      idToken: googleAuth.idToken,
-    );
-    await FirebaseAuth.instance.signInWithCredential(credential);
-    Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => HomePage()));
+    try {
+      final GoogleSignInAccount? googleUser =
+          await GoogleSignIn(scopes: ["profile", "email"]).signIn();
+      if (googleUser == null) {
+        throw Exception('Google sign-in aborted');
+      }
+
+      final GoogleSignInAuthentication googleAuth =
+          await googleUser.authentication;
+      final OAuthCredential credential = GoogleAuthProvider.credential(
+        accessToken: googleAuth.accessToken,
+        idToken: googleAuth.idToken,
+      );
+
+      await FirebaseAuth.instance.signInWithCredential(credential);
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => HomePage()));
+    } catch (e) {
+      print('Error during Google Sign-In: $e');
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text('Google sign-in failed: $e')));
+    }
   }
 
   @override
@@ -129,13 +156,16 @@ class _SignInState extends State<SignIn> {
                           filled: true,
                           fillColor: Colors.grey[200],
                           border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(screenWidth * 0.02),
+                              borderRadius:
+                                  BorderRadius.circular(screenWidth * 0.02),
                               borderSide: BorderSide.none),
                           enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(screenWidth * 0.02),
+                              borderRadius:
+                                  BorderRadius.circular(screenWidth * 0.02),
                               borderSide: BorderSide.none),
                           focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(screenWidth * 0.02),
+                              borderRadius:
+                                  BorderRadius.circular(screenWidth * 0.02),
                               borderSide: BorderSide.none),
                         ),
                       ),
@@ -164,13 +194,16 @@ class _SignInState extends State<SignIn> {
                             filled: true,
                             fillColor: Colors.grey[200],
                             border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(screenWidth * 0.02),
+                                borderRadius:
+                                    BorderRadius.circular(screenWidth * 0.02),
                                 borderSide: BorderSide.none),
                             enabledBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(screenWidth * 0.02),
+                                borderRadius:
+                                    BorderRadius.circular(screenWidth * 0.02),
                                 borderSide: BorderSide.none),
                             focusedBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(screenWidth * 0.02),
+                                borderRadius:
+                                    BorderRadius.circular(screenWidth * 0.02),
                                 borderSide: BorderSide.none)),
                         obscureText: true,
                       ),
@@ -187,9 +220,11 @@ class _SignInState extends State<SignIn> {
                         foregroundColor: Colors.white,
                         minimumSize: Size(fieldWidth, screenHeight * 0.05),
                         textStyle: TextStyle(
-                            fontSize: screenWidth * 0.045, fontWeight: FontWeight.bold),
+                            fontSize: screenWidth * 0.045,
+                            fontWeight: FontWeight.bold),
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(screenWidth * 0.02))),
+                            borderRadius:
+                                BorderRadius.circular(screenWidth * 0.02))),
                     child: Text('Login',
                         style: GoogleFonts.poppins(
                           textStyle: TextStyle(
