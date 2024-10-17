@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "122613859782-a1tnknlt10ktq4qvchf04ri2nn6kbvqu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ashurajput.tantrafiesta24",
+            "certificate_hash": "de9b92afdd31eecd496891ba9b0d14aef3fbce84"
+          }
+        },
+        {
           "client_id": "122613859782-gul7v7lvche34dmgfinv9uktevbrsoed.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
