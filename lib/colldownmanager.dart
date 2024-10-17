@@ -2,7 +2,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class CooldownManager {
   static const String _lastColorTimestampKey = 'last_color_timestamp';
-  static const int cooldownDuration = 3; // Cooldown duration in seconds
+  static const int cooldownDuration = 0; // Cooldown duration in seconds
 
   /// Checks if the user can color a pixel based on the cooldown period.
   Future<bool> canColorPixel() async {

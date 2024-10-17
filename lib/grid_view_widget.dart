@@ -22,7 +22,7 @@ class _ScalableGridPainterState extends State<ScalableGridPainter> {
   final GlobalKey _canvasKey = GlobalKey();
   Timer? _cooldownTimer;
   bool isCooldownActive = false; // Add this variable
-  int cooldownDuration = 3; // Duration of cooldown in seconds
+  int cooldownDuration = 0; // Duration of cooldown in seconds
   int remainingCooldownTime = 0; // Variable to track remaining cooldown time
 
   @override
@@ -260,7 +260,8 @@ class ColorPalette extends StatefulWidget {
   final GridState gridState;
   final double screenWidth;
 
-  const ColorPalette({super.key, required this.gridState, required this.screenWidth});
+  const ColorPalette(
+      {super.key, required this.gridState, required this.screenWidth});
 
   @override
   _ColorPaletteState createState() => _ColorPaletteState();
