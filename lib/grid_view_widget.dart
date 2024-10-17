@@ -23,7 +23,7 @@ class _ScalableGridPainterState extends State<ScalableGridPainter> {
   Timer? _cooldownTimer;
   bool isCooldownActive = false; // Add this variable
   int cooldownDuration = 3; // Duration of cooldown in seconds
-  int remainingCooldownTime = 0; // Variable to track remaining cooldown time
+  int remainingCooldownTime = 3; // Variable to track remaining cooldown time
 
   @override
   void initState() {

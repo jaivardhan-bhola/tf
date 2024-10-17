@@ -99,6 +99,14 @@
           }
         },
         {
+          "client_id": "122613859782-8lc9tl7iheipk0ebmjo8lptc23v1fdme.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.r_place_clone",
+            "certificate_hash": "de9b92afdd31eecd496891ba9b0d14aef3fbce84"
+          }
+        },
+        {
           "client_id": "122613859782-akjd25c85ospm0k4ula3nqg6ip5vtpp8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
